@@ -3,99 +3,104 @@
 <head>
 <link rel="manifest" href="manifest.json"><meta charset="utf-8"/>
 <title>Seed Cart Tank Split Calculator</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      margin: 0;
-      background-color: #f2f2f2;
-      color: #222;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      padding: 1rem;
-    }
+<style>
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1rem;
+  }
 
-    .container {
-      background: white;
-      padding: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      width: 100%;
-      max-width: 450px;
-      box-sizing: border-box;
-    }
+  .container {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+  }
 
-    h1 {
-      font-size: 1.5rem;
-      margin-bottom: 1rem;
-      text-align: center;
-      color: #111;
-    }
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.25rem;
+    text-align: center;
+    color: #111;
+  }
 
-    label {
-      font-size: 1rem;
-      font-weight: 600;
-      margin: 0.75rem 0 0.25rem;
-      display: block;
-      text-align: left;
-    }
+  label {
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0.75rem 0 0.25rem;
+    display: block;
+    text-align: left;
+  }
 
-    select, input[type="text"], input[type="number"] {
-      width: 100%;
-      padding: 0.6rem;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-      box-sizing: border-box;
-    }
+  select, input[type="text"], input[type="number"] {
+    width: 100%;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+  }
 
-    .tank-row {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-top: 0.75rem;
-    }
+  .tank-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+  }
 
-    .tank-row label {
-      margin: 0;
-      font-weight: 500;
-      flex-grow: 1;
-    }
+  .tank-row label {
+    margin: 0;
+    font-size: 1rem;
+    flex-grow: 1;
+    text-align: left;
+  }
 
-    .tank-row input[type="checkbox"] {
-      width: 20px;
-      height: 20px;
-      margin-left: 1rem;
-    }
+  .tank-row input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+  }
 
-    button {
-      width: 100%;
-      margin-top: 1.5rem;
-      padding: 0.75rem;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background-color 0.3s;
-    }
+  button {
+    width: 100%;
+    margin-top: 1.25rem;
+    padding: 0.75rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
 
-    button:hover {
-      background-color: #388e3c;
-    }
+  button:hover {
+    background-color: #388e3c;
+  }
 
-    .result {
-      margin-top: 1.25rem;
-      font-size: 1rem;
-      font-weight: 500;
-      color: #222;
-      text-align: left;
-      white-space: pre-line;
-    }
-  </style>
+  .result {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #222;
+    text-align: left;
+    white-space: pre-line;
+  }
+</style>
 </head>
 <body>
 <div class="container">
