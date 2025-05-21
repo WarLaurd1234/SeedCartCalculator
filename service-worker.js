@@ -1,4 +1,4 @@
-const cacheName = 'seed-cart-v1';
+const cacheName = 'seed-cart-cache-v1';
 const filesToCache = [
   './index.html',
   './manifest.json',
