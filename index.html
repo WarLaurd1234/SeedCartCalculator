@@ -4,26 +4,45 @@
 <link rel="manifest" href="manifest.json"><meta charset="utf-8"/>
 <title>Seed Cart Tank Split Calculator</title>
 <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      text-align: center;
-      transition: background-color 0.5s ease;
-    }
-    label, select, input {
-      margin: 10px auto;
-      display: block;
-      font-size: 1rem;
-    }
-    .result {
-      margin-top: 20px;
-      font-weight: bold;
-    }
-    .container {
-      max-width: 600px;
-      margin: auto;
-    }
-  </style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  .container {
+    max-width: 600px;
+    margin: auto;
+    padding: 10px;
+  }
+
+  label, input, select, button {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    margin: 10px auto;
+    font-size: 1rem;
+  }
+
+  input, select {
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px;
+    font-weight: bold;
+  }
+
+  .result {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+</style>
+
 </head>
 <body>
 <div class="container">
